@@ -1,0 +1,29 @@
+time (in milliseconds)
+
+tinyArray {
+  insert: 0.0515
+  append: 3.4092
+}
+smallArray {
+  insert: 0.0683
+  append: 3.2984
+}
+mediumArray {
+  insert: 0.2265
+  append: 3.3691
+}
+largeArray {
+  insert: 9.8912
+  append: 3.3055
+}
+extraLargeArray {
+  insert: 966.9077
+  append: 3.2613
+}
+
+the insert function appears to be Quadratic or O(n^2) because the response time of the function increases exponentially. 
+This is because the .shift() method is used which moves every value in the array every time the function is run. This means 
+the time it takes to add values to the array on each iteration increases because each iteration has more values to shift.
+The append function on the other hand is Linear or O(n) because the push method is used to add the multiplied value
+to the end of the array, so no matter how big the given array is, each iteration of the function will take the same amount of time.
+Therefore, the append function scales better.
