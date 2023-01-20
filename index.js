@@ -17,38 +17,10 @@ const addToZero = (arr) => {
 const hasUniqueChars = (str) => [...new Set(str)].join('') === str;
 // console.log(hasUniqueChars('monday'));
 
-const alphabet = [
-  'a',
-  'b',
-  'c',
-  'd',
-  'e',
-  'f',
-  'g',
-  'h',
-  'i',
-  'j',
-  'k',
-  'l',
-  'm',
-  'n',
-  'o',
-  'p',
-  'q',
-  'r',
-  's',
-  't',
-  'u',
-  'v',
-  'w',
-  'x',
-  'y',
-  'z',
-];
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 // this runtime is Linearithmic or O(n log n) because the .sort function is O(n log n)
 const isPangram = (str) =>
-  [...new Set(str.toLowerCase())].sort().slice(1).join('') ===
-  alphabet.join('');
+  [...new Set(str.toLowerCase())].sort().slice(1).join('') === alphabet;
 // console.log(isPangram('The quick brown fox jumps over the lazy dog'));
 
 // this runtime is Linearithmic or O(n log n)
