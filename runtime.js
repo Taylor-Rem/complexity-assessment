@@ -42,7 +42,7 @@ let resultsAppend = perf.stop(); // Stops timer and save time results
 
 // Try it with second function
 perf.start();
-doublerInsert(largeArray);
+doublerInsert(extraLargeArray);
 let resultsInsert = perf.stop();
 
 console.log('Results for the extraLargeArray');

@@ -1,23 +1,23 @@
 time (in milliseconds)
 
 tinyArray {
-  insert: 0.0515
-  append: 3.4092
+  insert: 0.0466
+  append: 0.1077
 }
 smallArray {
-  insert: 0.0683
-  append: 3.2984
+  insert: 0.0615
+  append: 0.1189
 }
 mediumArray {
-  insert: 0.2265
-  append: 3.3691
+  insert: 0.2222
+  append: 0.2146
 }
 largeArray {
-  insert: 9.8912
-  append: 3.3055
+  insert: 10.024
+  append: 0.7076
 }
 extraLargeArray {
-  insert: 966.9077
+  insert: 981.862
   append: 3.2613
 }
 
