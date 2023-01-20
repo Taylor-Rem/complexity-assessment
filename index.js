@@ -19,9 +19,9 @@ const hasUniqueChars = (str) => [...new Set(str)].join('') === str;
 
 // this runtime is Linearithmic or O(n log n) because the .sort function is O(n log n)
 const isPangram = (str) =>
-  [...new Set(str.toLowerCase())].sort().slice(1).join('') ===
-  'abcdefghijklmnopqrstuvwxyz';
-// console.log(isPangram('The quick brown fox jumps over the lazy dog'));
+  [...new Set(str.toLowerCase())].sort().join('') ===
+  ' abcdefghijklmnopqrstuvwxyz';
+console.log(isPangram('The quick brown fox jumps over the lazy dog'));
 
 // this runtime is Linearithmic or O(n log n)
 const findLongestWord = (arr) =>
